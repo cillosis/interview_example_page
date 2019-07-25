@@ -1,0 +1,20 @@
+.constrained-container {
+    border-bottom: 5px solid #CCC;
+}
+.constrained-content-container {
+    padding: 10px 100px;
+    color: $content-dark-blue;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: $grid-mobile-breakpoint) {
+    .constrained-content-container {
+        padding: 10px;
+        h2 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+    }
+}

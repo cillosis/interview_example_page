@@ -1,0 +1,58 @@
+.cardset-container {
+    float: left;
+    background-color: $content-light-blue;
+    border-top: 4px solid darken($content-light-blue, 10%);
+    padding: 40px 0;
+    margin-top: 2px;
+}
+.cardset {
+    background-color: $content-dark-blue;
+    padding: 20px;
+    float: left;
+    margin: 0px 10px;
+    color: $white;
+    border-radius: 10px;
+    a {
+        color: $white;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (max-width: $grid-mobile-breakpoint) {
+    .col-2 {
+        display: none;
+    }
+    .cardset-container {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .cardset {
+        float: none;
+        display: block;
+        width: auto;
+        text-align: left;
+        margin: 0 15px;
+        padding: 10px;
+        h2, p {
+            margin: 10px;
+        }
+        .col-2 {
+            display: none;
+        }
+        .card {
+            float: none;
+            display: block;
+            width: auto;
+            text-align: center;
+            margin: 15px auto;
+            .card-image-container {
+                height: 200px;
+            }
+        }
+    }
+}

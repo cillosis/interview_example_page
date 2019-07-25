@@ -1,0 +1,51 @@
+@import 'variables';
+
+.card {
+    padding: 0px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid $white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+    background-color: $white;
+    max-width: 380px;
+    height: 380px;
+    overflow: hidden;
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 1.05em;
+    text-align: center;
+    color: $font-blue;
+    letter-spacing: 1.1px;
+    &:hover {
+        color: $redorange;
+        cursor: pointer;
+        .card-image {
+            opacity: 0.8;
+        }
+    }
+    .card-image-container {
+        max-width: 100%;
+        overflow: hidden;
+        height: 200px;
+        text-align: center;
+        background-color: $white;
+        margin: 0px;
+        .card-image {
+            position: relative;
+            top: -100px;
+            margin: 0px;
+        }
+    }
+    .card-title {
+        font-weight: bold;
+        margin: 15px 20px;
+        font-size: 1.1em;
+        font-family: $montserrat;
+    }
+    .card-content {
+        height: 80px;
+    }
+    .card-button {
+        margin: 10px;
+    }
+}

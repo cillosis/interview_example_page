@@ -1,0 +1,19 @@
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both !important;
+}
+
+.pull-right {
+    float: right;
+    @media only screen and (max-width: $grid-mobile-breakpoint) {
+        float: none;
+        text-align: right;
+    }
+}
